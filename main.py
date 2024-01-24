@@ -17,6 +17,7 @@ def root():
 
 @app.get("/st")
 def streaming():
+    print('Test!!')
     # StreamingResponse(streaming_test())
     return StreamingResponse(streaming_test(),media_type="application/x-ndjson")
 
